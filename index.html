@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>课题组官网</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ergonomic-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -15,8 +16,8 @@
                     <li><a href="#home">首页</a></li>
                     <li><a href="#about">关于我们</a></li>
                     <li><a href="#research">研究方向</a></li>
+                    <li><a href="#publications">发表论文</a></li>
                     <li><a href="#team">团队成员</a></li>
-                    <li><a href="#contact">联系我们</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,20 +27,20 @@
         <div class="banner">
             <div class="banner-slide active" style="background-image: url('images/hero/hero1.jpeg');">
                 <div class="banner-content">
-                    <h1>欢迎来到课题组</h1>
+                    <h1>欢迎来到数字人文与体验设计实验室</h1>
                     <p>探索创新与研究的前沿</p>
                 </div>
             </div>
             <div class="banner-slide" style="background-image: url('images/hero/hero2.jpeg');">
                 <div class="banner-content">
-                    <h1>创新与实践</h1>
-                    <p>致力于前沿技术研究</p>
+                    <h1>站在科技与人文的十字路口</h1>
+                    <p>致力于探索计算机设计交叉学科前沿应用</p>
                 </div>
             </div>
             <div class="banner-slide" style="background-image: url('images/hero/hero3.jpeg');">
                 <div class="banner-content">
                     <h1>携手共进</h1>
-                    <p>推动科学发展</p>
+                    <p>欢迎计算机科学、 机械工程、心理学、设计学等相关专业的同学加盟</p>
                 </div>
             </div>
             <div class="banner-controls">
@@ -52,20 +53,142 @@
     <section id="about" class="content-section">
         <div class="container">
             <h2>关于我们</h2>
-            <p>我们的课题组致力于...（这里填写详细的介绍）</p>
+            <p>　　数字人文与体验设计实验室 (DHUX Lab) 依托于教育部哲学社会科学实验室——浙江大学艺术与考古图像数据实验室，
+                主要从事数据可视化设计，人机交互，数字人文，混合现实，人工智能 等相关领域的研究，
+                旨在培养具有国际视野、具备交叉学科基础和创意创新能力的领军型设计人才;
+                实验室目前拥有求是特聘教授1名，百人计划研究员2名。
+                实验室每年在IEEE VIS/TVCG、 ACM CHI/UIST、IJHCI等国际可视化、人机交互顶会顶刊发表论文若干，欢迎计算机科学、 机械工程、心理学、设计学等相关专业的同学加盟(学生学籍放在计算机科学与技术学院)
+            </p>
         </div>
     </section>
 
     <section id="research" class="content-section">
         <div class="container">
             <h2>研究方向</h2>
-            <p>我们的主要研究方向包括...（这里填写研究方向）</p>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/group1.png" alt="研究方向1">
+                    <div class="card-content">
+                        <h3>数字人文可视化</h3>
+                        <p>推动数字文化资源的设计转化与应用，服务国家文化软实力提升.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/group2.png" alt="研究方向2">
+                    <div class="card-content">
+                        <h3>人因工效学小组</h3>
+                        <p>将用户认知行为、生理特征的心理认知测评方法用于设计的定量评价分析中，对设计的可行性、操作效率、认知负荷等诸多生理行为数据进行设计分析. </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/group3.png" alt="研究方向3">
+                    <div class="card-content">
+                        <h3>人机交互界面评估与生成</h3>
+                        <p>服务于国家发展战略，筹备国内领先的装备复杂信息系统人机交互设计研究中. </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section id="publications" class="content-section">
+        <div class="container">
+            <h2>发表论文</h2>
+            <div class="filters">
+                <button class="filter-btn" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="digital-humanities">数字人文</button>
+                <button class="filter-btn" data-filter="ergonomics">工效学</button>
+                <button class="filter-btn" data-filter="hci">人机界面</button>
+            </div>
+            <div class="publications">
+                <div class="publication" data-category="digital-humanities">
+                    <h3>ColorNetVis: An Interactive Color Network Analysis System for Exploring the Color Composition of Traditional Chinese Painting</h3>
+                    <div class="info">
+                        <span class="tag digital-humanities">数字人文</span>
+                        <p>Xiaojiao Chen, Qinghua Liu, Yonghao Chen, Ruihan Wang, Yang You, Wanxin Deng, Wei Chen, Xiaosong Wang</p>
+                    </div>
+                    <p>IEEE Transactions on Visualization and Computer Graphics, 2024. CCF A类期刊论文</p>
+                </div>
+                <div class="publication" data-category="ergonomics">
+                    <h3>Enhancing Fixation and Pursuit: Optimizing Field of View and Number of Targets for Selection Performance in Virtual Reality</h3>
+                    <div class="info">
+                        <span class="tag ergonomics">工效学</span>
+                        <p>Chen X, Tang X*</p>
+                    </div>
+                    <p>International Journal of Human–Computer Interaction, 2024. (SCI检索, IF: 4.7, JCRQ1区)</p>
+                </div>
+                <div class="publication" data-category="hci">
+                    <h3>Spherical fuzzy bipartite graph based QFD methodology (SFBG-QFD): Assistive products design application</h3>
+                    <div class="info">
+                        <span class="tag hci">人机界面</span>
+                        <p>Liu Q, Chen X*, Tang X</p>
+                    </div>
+                    <p>Expert Systems With Applications, 2024, 239: 122279. https://doi.org/10.1016/j.eswa.2023.122279. (SCI,IF: 8.5, JCR Q1区, 中科院1区）</p>
+                </div>
+                <div class="publication" data-category="ergonomics">
+                    <h3>自动驾驶中的情感化设计</h3>
+                    <div class="info">
+                        <span class="tag ergonomics">工效学</span>
+                        <p>陈晓皎,方可,王博凡,纪翔,刘艳芳,高齐</p>
+                    </div>
+                    <p>应用心理学,2024. （CSSCI）</p>
+                </div>
+                <div class="publication" data-category="digital-humanities">
+                    <h3>面向中国古画鉴定的多模态可视分析方法</h3>
+                    <div class="info">
+                        <span class="tag digital-humanities">数字人文</span>
+                        <p>陈晓皎, 陈泳豪, 唐谈*, 葛鑫, 汪睿涵, 王一帆, 王小松*</p>
+                    </div>
+                    <p>计算机辅助设计与图形学学报 [J], 已录用, 2024. 计算机类T1期刊</p>
+                </div>
+                <div class="publication" data-category="ergonomics">
+                    <h3>Evaluating Visual Consistency of Icon Usage in Across-Devices</h3>
+                    <div class="info">
+                        <span class="tag ergonomics">工效学</span>
+                        <p>Chen X, Tang X, Zhao Y*, Huang TY, Qian R, Zhang JY, Chen W, Wang XS*</p>
+                    </div>
+                    <p>International Journal of Human–Computer Interaction, 2023: 1-17. (SCI检索, IF: 4.7, JCRQ1区)</p>
+                </div>
+                <div class="publication" data-category="digital-humanities">
+                    <h3>文化遗产数字化保护及可视化</h3>
+                    <div class="info">
+                        <span class="tag digital-humanities">数字人文</span>
+                        <p>陈晓皎,苗甜,唐晓腾等</p>
+                    </div>
+                    <p>包装工程,2022,43(20):26-37.</p>
+                </div>
+                <div class="publication" data-category="digital-humanities">
+                    <h3>Evaluating user cognition of network diagrams</h3>
+                    <div class="info">
+                        <span class="tag digital-humanities">数字人文</span>
+                        <p>Chen X, Tang X, Luo Z, et al.</p>
+                    </div>
+                    <p>Visual Informatics, 2021, 5(4): 26-33.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
 
     <section id="team" class="content-section">
         <div class="container">
             <h2>团队成员</h2>
+            <div class="mentor-info">
+                <img src="images/mentor.png" alt="导师照片" class="mentor-photo">
+                <div class="mentor-details">
+                    <p><strong>单位</strong> 艺术与考古学院</p>
+                    <p><i class="fas fa-envelope"></i> 邮箱 chenxiaojiao@zju.edu.cn</p>
+                    <p><i class="fas fa-graduation-cap"></i> 研究方向</p>
+                    <ul>
+                        <li>- 复杂信息系统人机交互界面设计研究 </li>
+                        <li>- 设计与认知决策研究</li>
+                        <li>- 数据可视化设计</li>
+                        <li>- 用户体验与交互设计</li>
+                    </ul>
+                </div>
+            </div>
             <div class="team-members">
                 <div class="team-member">
                     <img src="images/team1.jpg" alt="团队成员1">
@@ -78,14 +201,6 @@
                     <p>职务</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="content-section">
-        <div class="container">
-            <h2>联系我们</h2>
-            <p>邮箱: example@example.com</p>
-            <p>电话: 123-456-7890</p>
         </div>
     </section>
 

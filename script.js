@@ -36,3 +36,18 @@ document.querySelectorAll('nav a').forEach(anchor => {
         });
     });
 });
+
+// Filter functionality
+document.querySelectorAll('.filter-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        document.querySelectorAll('.publication').forEach(pub => {
+            if (filter === 'all' || pub.getAttribute('data-category') === filter) {
+                pub.style.display = 'block';
+            } else {
+                pub.style.display = 'none';
+            }
+        });
+    });
+});
+
